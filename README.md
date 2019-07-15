@@ -53,8 +53,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    /usr/local/etc/php/7.1
    ```
 
-   
-
 3. 安装xdebug调试扩展
 
    ```shell
@@ -112,7 +110,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    Include /usr/local/etc/httpd/vhost/*.conf
    ```
 
-5. 在vhost目录是创建对应域名的conf文件，例如创建dev.abc.com.conf，模板如下：
+5. 在vhost目录中创建对应域名的conf文件，例如创建dev.abc.com.conf，模板如下：
 
    ```ini
    <VirtualHost *:80>

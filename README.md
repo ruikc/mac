@@ -39,3 +39,26 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ##  二、PHP基础环境的安装
 
+
+
+### 三、前端免费的CDN加速
+
+1. BootCDN [https://www.bootcdn.cn/](https://www.bootcdn.cn/)
+2. Staticfile CDN [https://www.staticfile.org/](https://www.staticfile.org/)
+
+
+
+###  四、前端插件库
+
+#### 视频插件
+
+1. clappr.js 
+
+   [http://clappr.io/](http://clappr.io/) 
+
+   [https://www.toutiao.com/a6713415883122803214](https://www.toutiao.com/a6713415883122803214)
+
+   > - 360角度视频
+   > - 缩略图模式
+   > - 视频进度条标记
+   > - 清晰度调整

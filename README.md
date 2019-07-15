@@ -54,9 +54,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 1. clappr.js 
 
-   [http://clappr.io/](http://clappr.io/) 
-
-   [https://www.toutiao.com/a6713415883122803214](https://www.toutiao.com/a6713415883122803214)
+   [http://clappr.io/](http://clappr.io/) ，[https://www.toutiao.com/a6713415883122803214](https://www.toutiao.com/a6713415883122803214)
 
    > - 360角度视频
    > - 缩略图模式

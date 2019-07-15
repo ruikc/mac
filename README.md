@@ -71,13 +71,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 #### Yii2 常用扩展整理
 
-1. Httpclient  
+1. Httpclient  - 发起远程get,post等请求
 
    github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient)
 
    pkg：[https://packagist.org/packages/yiisoft/yii2-httpclient](https://packagist.org/packages/yiisoft/yii2-httpclient)
-
-   说明：发起远程get,post等请求
 
    安装：
 
@@ -108,13 +106,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    $article = $response->data[0] // get fir
    ```
 
-2. Umeditor  
+2. Umeditor  -  百度Umeditor在线Html编辑器
 
    github：[https://github.com/shi-yang/yii2-umeditor](https://github.com/shi-yang/yii2-umeditor)
 
    pkg：[https://packagist.org/packages/shiyang/yii2-umeditor](https://packagist.org/packages/shiyang/yii2-umeditor)
-
-   说明：百度Umeditor在线Html编辑器
 
    安装：
 
@@ -138,13 +134,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    ]) ?>
    ```
 
-3. Date-time-piacker
+3. Date-time-piacker - bootstrap 时间控件
 
    github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget)
 
    pkg：[https://packagist.org/packages/2amigos/yii2-date-time-picker-widget](https://packagist.org/packages/2amigos/yii2-date-time-picker-widget)
-
-   说明：bootstrap 时间控件
 
    安装：
 

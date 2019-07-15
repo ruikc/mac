@@ -3,16 +3,6 @@
 
 ## 一、必须要安装的基础环境
 
-#### [Homebrew](https://brew.sh/)
-
-```shell
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-```shell
-brew up #更新成最新的版本
-```
-
 #### [Oh-my-zsh](https://ohmyz.sh/)
 
 ```shell
@@ -34,6 +24,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    ```
 
 3. Start a new terminal session.
+
+   
+
+#### [Homebrew](https://brew.sh/)
+
+```shell
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+```shell
+brew up #更新成最新的版本
+```
 
 
 

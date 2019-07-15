@@ -1,7 +1,9 @@
 # mac下常用的开发环境
-#### 一、必须要安装的基础环境
 
-##### homebrew
+
+## 一、必须要安装的基础环境
+
+#### [Homebrew](https://brew.sh/)
 
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -11,13 +13,13 @@
 brew up #更新成最新的版本
 ```
 
-##### Oh-my-zsh
+#### [Oh-my-zsh](https://ohmyz.sh/)
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-##### Auto_suggestions
+#### [Auto_suggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
@@ -35,5 +37,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 
 
-#### 二、PHP基础环境的安装
+##  二、PHP基础环境的安装
 

@@ -3,13 +3,13 @@
 
 ## 一、必须要安装的基础环境
 
-#### [Oh-my-zsh](https://ohmyz.sh/)
+#### [Oh-my-zsh](https://ohmyz.sh/?_blank)
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-#### [Auto_suggestions](https://github.com/zsh-users/zsh-autosuggestions)
+#### [Auto_suggestions](https://github.com/zsh-users/zsh-autosuggestions?_blank)
 
 1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
@@ -27,7 +27,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
    
 
-#### [Homebrew](https://brew.sh/)
+#### [Homebrew](https://brew.sh/?_blank)
 
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -134,11 +134,11 @@ brew up #更新成最新的版本
 
    镜像地址：https://mirrors.aliyun.com/composer/
 
-   官方地址：[https://developer.aliyun.com/composer](https://developer.aliyun.com/composer)
+   官方地址：[https://developer.aliyun.com/composer](https://developer.aliyun.com/composer?_blank)
 
 2. phpcomposer
 
-   镜像地址：[https://packagist.phpcomposer.com](https://packagist.phpcomposer.com)
+   镜像地址：[https://packagist.phpcomposer.com](https://packagist.phpcomposer.com?_blank)
 
    官方地址： [https://pkg.phpcomposer.com/](https://pkg.phpcomposer.com/)
 
@@ -146,7 +146,7 @@ brew up #更新成最新的版本
 
    镜像地址：[https://php.cnpkg.org](https://php.cnpkg.org)
 
-   官方地址：[https://php.cnpkg.org](https://php.cnpkg.org)
+   官方地址：[https://php.cnpkg.org](https://php.cnpkg.org?_blank)
 
 4. 配置命令如下:
 
@@ -162,7 +162,7 @@ brew up #更新成最新的版本
 
 1. Httpclient  - 发起远程get,post等请求
 
-   github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient)
+   github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient?_blank)
 
    pkg：[https://packagist.org/packages/yiisoft/yii2-httpclient](https://packagist.org/packages/yiisoft/yii2-httpclient)
 

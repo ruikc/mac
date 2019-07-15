@@ -134,7 +134,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    ]) ?>
    ```
 
-3. Date-time-piacker - bootstrap 时间控件
+3. DateTimePicker - bootstrap 时间控件
 
    github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget)
 
@@ -163,7 +163,106 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    ])->label('Date of birth'); ?>
    ```
 
-   
+4. PHPExcel - Excel的导入与导出
+
+   github：https://github.com/moonlandsoft/yii2-phpexcel
+
+   pkg：[https://packagist.org/packages/moonlandsoft/yii2-phpexcel](https://packagist.org/packages/moonlandsoft/yii2-phpexcel)
+
+   安装：
+
+   ```php
+   composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
+   ```
+
+   例子：
+
+   ```php
+   $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
+   $fileName = iconv("utf-8", "gb2312//IGNORE", $fileName);
+   Excel::widget([
+     'models' => $dataProvider->models,
+     'mode' => 'export', //default value as 'export'
+     'asAttachment' => true,
+     'showFooter' => true,
+     'columnsWrap' => ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'],
+     'columnsWidth' => [
+       'A' => 20,
+       'B' => 30,
+       'C' => 20,
+       'D' => 20,
+       'E' => 16,
+       'F' => 16,
+       'G' => 16,
+       'H' => 16,
+       'I' => 16,
+     ],
+     'fileName' => $fileName,
+     'columns' => [
+       ['header' => '收支', 'value' => function ($model) {
+         return $model->type == 3 ? '支出' : '收入';
+       }],
+       'demo',
+       ['header' => '交款人类型', 'value' => function ($model) {
+         return $model->type == 3 ? '' : ($model->type == 2 ? '团体' : '个人');
+       }],
+       ['header' => '交款人身份证号', 'value' => function ($model) {
+         return !$model->identity ? '' : "'" . $model->identity;
+       }],
+       ['attribute' => 'username', 'footer' => '合计：'],
+       ['attribute' => 'total', 'footer' => $total],
+       ['header' => '收据编号', 'value' => function ($model) {
+         return !$model->receipt ? '' : "'" . $model->receipt;
+       }],
+       'created_at:date',
+       'order_user',
+       'print_num'
+     ],
+   ]);
+   ```
+
+5. QiniuPHPSdk - 七牛云php-sdk
+
+   github：https://github.com/qiniu/php-sdk
+
+   pkg：https://packagist.org/packages/qiniu/php-sdk
+
+   安装：
+
+   ```php
+   composer require qiniu/php-sdk
+   ```
+
+   例子：
+
+   ```php
+   use Qiniu\Storage\UploadManager;
+   use Qiniu\Auth;
+   ...
+       $upManager = new UploadManager();
+       $auth = new Auth($accessKey, $secretKey);
+       $token = $auth->uploadToken($bucketName);
+       list($ret, $error) = $upManager->put($token, 'formput', 'hello world');
+   ...
+   ```
+
+6. Adminlte - adminlte后台管理界面
+
+   github：https://github.com/dmstr/yii2-adminlte-asset
+
+   pkg：https://packagist.org/packages/dmstr/yii2-adminlte-asset
+
+   安装：
+
+   ```php
+   composer require dmstr/yii2-adminlte-asset "^2.1"
+   ```
+
+   例子：
+
+   ```shell
+   参照github文档进行就可以
+   ```
 
 
 

@@ -39,6 +39,46 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ##  二、PHP基础环境的安装
 
+#### Composer 国内源
+
+1. 阿里云Composer(推荐)
+
+   镜像地址：https://mirrors.aliyun.com/composer/
+
+   官方地址：[https://developer.aliyun.com/composer](https://developer.aliyun.com/composer)
+
+2. phpcomposer
+
+   镜像地址：[https://packagist.phpcomposer.com](https://packagist.phpcomposer.com)
+
+   官方地址： [https://pkg.phpcomposer.com/](https://pkg.phpcomposer.com/)
+
+3. 安畅网络镜像
+
+   镜像地址：[https://php.cnpkg.org](https://php.cnpkg.org)
+
+   官方地址：[https://php.cnpkg.org](https://php.cnpkg.org)
+
+4. 配置命令如下:
+
+   ```shell
+   #全局配置
+   composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+   或
+   #项目配置
+   composer config repo.packagist composer https://mirrors.aliyun.com/composer/
+   ```
+
+#### Yii2 常用扩展整理
+
+
+
+
+
+#### Laravel常用扩展整理
+
+
+
 
 
 ### 三、前端免费的CDN加速

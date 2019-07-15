@@ -39,6 +39,95 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ##  二、PHP开发
 
+#### 安装php环境
+
+1. 安装php7.1版本
+
+   ```shell
+   brew install php@7.1 #安装php7.1版本
+   ```
+
+2. 默认文件所在路径
+
+   ```
+   /usr/local/etc/php/7.1
+   ```
+
+   
+
+3. 安装xdebug调试扩展
+
+   ```shell
+   mv /usr/local/etc/php/7.1/pecl /usr/local/etc/php/7.1/pecl_old #不知道为什么，原pecl不是目录
+   mkdir /usr/local/etc/php/7.1/pecl #先创建目录
+   pecl install xdebug #安装扩展
+   ```
+
+   xdebug相关配置：
+
+   ```ini
+   [xdebug]
+   zend_extension="/usr/local/etc/php/7.1/pecl/20160303/xdebug.so"
+   xdebug.remote_enable=On
+   xdebug.remote_handler="dbgp"
+   xdebug.remote_port=9100
+   xdebug.remote_host="localhost"
+   xdebug.idekey=PHPSTORM
+   xdebug.var_display_max_children=512
+   xdebug.var_display_max_data=1024
+   xdebug.var_display_max_depth=30
+   ```
+
+4. 其他扩展可以使用直接使用pecl进行安装
+
+   ```shell
+   比如pecl install mongodb 等
+   ```
+
+
+
+#### 安装Apache服务器
+
+1. 安装apache服务
+
+   ```shell
+   brew install httpd
+   ```
+
+2. 默认配置文件所在路径
+
+   ```shell
+   /usr/local/etc/httpd
+   ```
+
+3. 添加域名配置目录
+
+   ```sh
+   mkdir /usr/local/etc/httpd/vhost
+   ```
+
+4. 修改配置文件 /usr/local/etc/httpd/httpd.conf，在510左右添加以下代码
+
+   ```
+   Include /usr/local/etc/httpd/vhost/*.conf
+   ```
+
+5. 在vhost目录是创建对应域名的conf文件，例如创建dev.abc.com.conf，模板如下：
+
+   ```ini
+   <VirtualHost *:80>
+       DocumentRoot "/Users/zhiyuan/Project/web/dev.abc.com"
+       ServerName dev.abc.com
+       #ServerAlias 172.16.14.27
+       ErrorLog "/usr/local/var/log/httpd/dev.abc.com-error_log"
+       #CustomLog "/usr/local/var/log/httpd/dummy-host.example.com-access_log" common
+   </VirtualHost>
+   ```
+
+   
+
+
+
 #### Composer 国内源
 
 1. 阿里云Composer(推荐)
@@ -265,10 +354,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
    ```
 
 
-
-
-
-#### Laravel常用扩展整理
 
 
 

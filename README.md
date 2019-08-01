@@ -355,6 +355,64 @@ brew up #更新成最新的版本
 
 
 
+#### laravel 常用扩展
+
+1. Laravel-debugbar - 调试工具栏
+
+   Github： [https://github.com/barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+
+2. Laravel-ide-helper - 代码提示工具
+
+   Github： [https://github.com/barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
+
+3. Laravel-permission - 用户权限管理crud
+
+   Github： [https://github.com/spatie/laravel-permission](https://github.com/spatie/laravel-permission)
+
+4. Jwt-auth - jwt用户授权
+
+   Github：[https://github.com/tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth)
+
+5. Laravel-medialibrary - 媒体管理库
+
+   Github：[https://github.com/spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary)
+
+6. Laravel-cors - 跨域库
+
+   Github：[https://github.com/spatie/laravel-cors](https://github.com/spatie/laravel-cors)
+
+7. Laravel-wechat - 微信公众号等
+
+   Github：[https://github.com/overtrue/laravel-wechat](https://github.com/overtrue/laravel-wechat)
+
+8. Laravel-pinyin - 中文转换成拼音
+
+   Github：[https://github.com/overtrue/laravel-pinyin](https://github.com/overtrue/laravel-pinyin)
+
+9. Laravel-lang - 多语言包
+
+   Github：[https://github.com/overtrue/laravel-lang](https://github.com/overtrue/laravel-lang)
+
+10. Laravel-snappy - 网页保存成pdf或图片
+
+    Github：[https://github.com/barryvdh/laravel-snappy](https://github.com/barryvdh/laravel-snappy)
+
+11. Laravel-push-notification - 消息推动，包括ios
+
+    Github：[https://github.com/davibennun/laravel-push-notification](https://github.com/davibennun/laravel-push-notification)
+
+12. Image - 图片操作库
+
+    Github：[https://github.com/Intervention/image](https://github.com/Intervention/image)
+
+13. Laravel-excel - Excel文件操作库
+
+    Github：[https://github.com/Maatwebsite/Laravel-Excel](https://github.com/Maatwebsite/Laravel-Excel)
+
+14. Laravel-flash  - 轻量级消息提示
+
+    Github：[https://github.com/spatie/laravel-flash](https://github.com/spatie/laravel-flash)
+
 
 
 ## 三、 前端开发
@@ -376,3 +434,14 @@ brew up #更新成最新的版本
    > - 缩略图模式
    > - 视频进度条标记
    > - 清晰度调整
+
+
+
+### 常用知识
+
+#### 正则表达式
+
+```
+/^(([1-9]{1}\d*)|([0]{1}))(\.(\d){0,2})?$/ - 小数保留两位小数
+```
+

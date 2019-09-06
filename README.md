@@ -412,6 +412,12 @@ brew up #更新成最新的版本
 14. Laravel-flash  - 轻量级消息提示
 
     Github：[https://github.com/spatie/laravel-flash](https://github.com/spatie/laravel-flash)
+    
+15. Laravel-LaravelCollective - 表单组件
+
+    Github：[https://github.com/LaravelCollective/html](https://github.com/LaravelCollective/html)
+
+
 
 
 

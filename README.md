@@ -162,20 +162,18 @@ brew up #更新成最新的版本
 
 1. Httpclient  - 发起远程get,post等请求
 
-   github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient)
-
-   pkg：[https://packagist.org/packages/yiisoft/yii2-httpclient](https://packagist.org/packages/yiisoft/yii2-httpclient)
+   Github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient)
 
    安装：
 
    ```php
-   composer require --prefer-dist yiisoft/yii2-httpclient
+composer require --prefer-dist yiisoft/yii2-httpclient
    ```
-
+   
    例子：
 
    ```php
-   use yii\httpclient\Client;
+use yii\httpclient\Client;
    
    $client = new Client(['baseUrl' => 'http://example.com/api/1.0']);
    $response = $client->createRequest()
@@ -194,23 +192,21 @@ brew up #更新成最新的版本
    count($response->data) // count articles
    $article = $response->data[0] // get fir
    ```
-
+   
 2. Umeditor  -  百度Umeditor在线Html编辑器
 
-   github：[https://github.com/shi-yang/yii2-umeditor](https://github.com/shi-yang/yii2-umeditor)
-
-   pkg：[https://packagist.org/packages/shiyang/yii2-umeditor](https://packagist.org/packages/shiyang/yii2-umeditor)
+   Github：[https://github.com/shi-yang/yii2-umeditor](https://github.com/shi-yang/yii2-umeditor)
 
    安装：
 
    ```php
-   composer require --prefer-dist shiyang/yii2-umeditor "*"
+composer require --prefer-dist shiyang/yii2-umeditor "*"
    ```
-
+   
    例子：
 
    ```php
-   <?= $form->field($model, 'content')->widget('shiyang\umeditor\UMeditor', [
+<?= $form->field($model, 'content')->widget('shiyang\umeditor\UMeditor', [
      'clientOptions' => [
        'imageUrl' => \yii\helpers\Url::to(['/upload/umeditor']), //上传图片的链接
        'initialFrameHeight' => 500,
@@ -222,23 +218,21 @@ brew up #更新成最新的版本
      ]
    ]) ?>
    ```
-
+   
 3. DateTimePicker - bootstrap 时间控件
 
-   github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget)
-
-   pkg：[https://packagist.org/packages/2amigos/yii2-date-time-picker-widget](https://packagist.org/packages/2amigos/yii2-date-time-picker-widget)
+   Github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget)
 
    安装：
 
    ```php
-   composer require 2amigos/yii2-date-time-picker-widget:~1.0
+composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ```
-
+   
    例子：
 
    ```php
-   <?= $form->field($model, 'birthday')->widget('dosamigos\datetimepicker\DateTimePicker', [
+<?= $form->field($model, 'birthday')->widget('dosamigos\datetimepicker\DateTimePicker', [
      'options' => ['placeholder' => '', 'readonly' => 'readonly'],
      'clientOptions' => [
        'autoclose' => true,
@@ -251,23 +245,21 @@ brew up #更新成最新的版本
      ]
    ])->label('Date of birth'); ?>
    ```
-
+   
 4. PHPExcel - Excel的导入与导出
 
-   github：https://github.com/moonlandsoft/yii2-phpexcel
-
-   pkg：[https://packagist.org/packages/moonlandsoft/yii2-phpexcel](https://packagist.org/packages/moonlandsoft/yii2-phpexcel)
+   Github：https://github.com/moonlandsoft/yii2-phpexcel
 
    安装：
 
    ```php
-   composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
+composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
    ```
-
+   
    例子：
 
    ```php
-   $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
+$fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
    $fileName = iconv("utf-8", "gb2312//IGNORE", $fileName);
    Excel::widget([
      'models' => $dataProvider->models,
@@ -309,23 +301,21 @@ brew up #更新成最新的版本
      ],
    ]);
    ```
-
+   
 5. QiniuPHPSdk - 七牛云php-sdk
 
-   github：https://github.com/qiniu/php-sdk
-
-   pkg：https://packagist.org/packages/qiniu/php-sdk
+   Github：https://github.com/qiniu/php-sdk
 
    安装：
 
    ```php
-   composer require qiniu/php-sdk
+composer require qiniu/php-sdk
    ```
-
+   
    例子：
 
    ```php
-   use Qiniu\Storage\UploadManager;
+use Qiniu\Storage\UploadManager;
    use Qiniu\Auth;
    ...
        $upManager = new UploadManager();
@@ -334,24 +324,65 @@ brew up #更新成最新的版本
        list($ret, $error) = $upManager->put($token, 'formput', 'hello world');
    ...
    ```
-
+   
 6. Adminlte - adminlte后台管理界面
 
-   github：https://github.com/dmstr/yii2-adminlte-asset
-
-   pkg：https://packagist.org/packages/dmstr/yii2-adminlte-asset
+   Github：https://github.com/dmstr/yii2-adminlte-asset
 
    安装：
 
    ```php
-   composer require dmstr/yii2-adminlte-asset "^2.1"
+composer require dmstr/yii2-adminlte-asset "^2.1"
+   ```
+   
+   例子：
+
+   ```shell
+参照github文档进行就可以
+   ```
+   
+7. Qrcode - 二维码生成
+
+   Github：[https://github.com/2amigos/qrcode-library](https://github.com/2amigos/qrcode-library)
+
+   文档：[https://qrcode-library.readthedocs.io/en/latest/](https://qrcode-library.readthedocs.io/en/latest/)
+
+   安装：
+
+   ```php
+   composer require 2amigos/qrcode-library:~1.1
    ```
 
    例子：
 
    ```shell
-   参照github文档进行就可以
+   <?php 
+   
+   use Da\QrCode\QrCode;
+   
+   $qrCode = (new QrCode('This is my text'))
+       ->setSize(250)
+       ->setMargin(5)
+       ->useForegroundColor(51, 153, 255);
+   
+   // now we can display the qrcode in many ways
+   // saving the result to a file:
+   
+   $qrCode->writeFile(__DIR__ . '/code.png'); // writer defaults to PNG when none is specified
+   
+   // display directly to the browser 
+   header('Content-Type: '.$qrCode->getContentType());
+   echo $qrCode->writeString();
+   
+   ?> 
+   
+   <?php 
+   // or even as data:uri url
+   echo '<img src="' . $qrCode->writeDataUri() . '">';
+   ?>
    ```
+
+
 
 
 
@@ -361,21 +392,57 @@ brew up #更新成最新的版本
 
    Github： [https://github.com/barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
 
+   安装：
+
+   ```shell
+   composer require barryvdh/laravel-debugbar --dev
+   ```
+
 2. Laravel-ide-helper - 代码提示工具
 
    Github： [https://github.com/barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
+
+   安装：
+
+   ```shell
+   composer require --dev barryvdh/laravel-ide-helper
+   ```
 
 3. Laravel-permission - 用户权限管理crud
 
    Github： [https://github.com/spatie/laravel-permission](https://github.com/spatie/laravel-permission)
 
+   文档：[https://docs.spatie.be/laravel-permission/v3/introduction/](https://docs.spatie.be/laravel-permission/v3/introduction/)
+
+   安装：
+
+   ```shell
+   composer require spatie/laravel-permission
+   ```
+
 4. Jwt-auth - jwt用户授权
 
    Github：[https://github.com/tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth)
 
+   文档：[https://jwt-auth.readthedocs.io/en/develop/](https://jwt-auth.readthedocs.io/en/develop/)
+
+   安装：
+
+   ```shell
+   composer require tymon/jwt-auth
+   ```
+
 5. Laravel-medialibrary - 媒体管理库
 
    Github：[https://github.com/spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary)
+
+   文档：[https://docs.spatie.be/laravel-medialibrary/v7/introduction/](https://docs.spatie.be/laravel-medialibrary/v7/introduction/)
+
+   安装：
+
+   ```shell
+   composer require "spatie/laravel-medialibrary:^7.0.0"
+   ```
 
 6. Laravel-cors - 跨域库
 

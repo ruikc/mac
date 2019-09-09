@@ -166,7 +166,7 @@ brew up #更新成最新的版本
 
    安装：
 
-   ```php
+   ```shell
 composer require --prefer-dist yiisoft/yii2-httpclient
    ```
    
@@ -199,7 +199,7 @@ use yii\httpclient\Client;
 
    安装：
 
-   ```php
+   ```shell
 composer require --prefer-dist shiyang/yii2-umeditor "*"
    ```
    
@@ -225,7 +225,7 @@ composer require --prefer-dist shiyang/yii2-umeditor "*"
 
    安装：
 
-   ```php
+   ```shell
 composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ```
    
@@ -252,7 +252,7 @@ composer require 2amigos/yii2-date-time-picker-widget:~1.0
 
    安装：
 
-   ```php
+   ```shell
 composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
    ```
    
@@ -308,7 +308,7 @@ $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
 
    安装：
 
-   ```php
+   ```shell
 composer require qiniu/php-sdk
    ```
    
@@ -331,7 +331,7 @@ use Qiniu\Storage\UploadManager;
 
    安装：
 
-   ```php
+   ```shell
 composer require dmstr/yii2-adminlte-asset "^2.1"
    ```
    
@@ -349,13 +349,13 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
    安装：
 
-   ```php
+   ```shell
    composer require 2amigos/qrcode-library:~1.1
    ```
 
    例子：
 
-   ```shell
+   ```php
    <?php 
    
    use Da\QrCode\QrCode;

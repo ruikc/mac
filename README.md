@@ -416,6 +416,10 @@ brew up #更新成最新的版本
 15. Laravel-LaravelCollective - 表单组件
 
     Github：[https://github.com/LaravelCollective/html](https://github.com/LaravelCollective/html)
+    
+16. Laravel-mediable - 另一个图片及多媒体管理库
+
+    Github：[https://github.com/plank/laravel-mediable](https://github.com/plank/laravel-mediable)
 
 
 

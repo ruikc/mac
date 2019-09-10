@@ -166,13 +166,13 @@ brew up #更新成最新的版本
 
    安装：
 
-   ```shell
+   ```
 composer require --prefer-dist yiisoft/yii2-httpclient
    ```
    
    例子：
 
-   ```php
+   ```
 use yii\httpclient\Client;
    
    $client = new Client(['baseUrl' => 'http://example.com/api/1.0']);
@@ -199,13 +199,13 @@ use yii\httpclient\Client;
 
    安装：
 
-   ```shell
+   ```
 composer require --prefer-dist shiyang/yii2-umeditor "*"
    ```
    
    例子：
 
-   ```php
+   ```
 <?= $form->field($model, 'content')->widget('shiyang\umeditor\UMeditor', [
      'clientOptions' => [
        'imageUrl' => \yii\helpers\Url::to(['/upload/umeditor']), //上传图片的链接
@@ -225,13 +225,13 @@ composer require --prefer-dist shiyang/yii2-umeditor "*"
 
    安装：
 
-   ```shell
+   ```
 composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ```
    
    例子：
 
-   ```php
+   ```
 <?= $form->field($model, 'birthday')->widget('dosamigos\datetimepicker\DateTimePicker', [
      'options' => ['placeholder' => '', 'readonly' => 'readonly'],
      'clientOptions' => [
@@ -252,13 +252,13 @@ composer require 2amigos/yii2-date-time-picker-widget:~1.0
 
    安装：
 
-   ```shell
+   ```
 composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
    ```
    
    例子：
 
-   ```php
+   ```
 $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
    $fileName = iconv("utf-8", "gb2312//IGNORE", $fileName);
    Excel::widget([
@@ -308,13 +308,13 @@ $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
 
    安装：
 
-   ```shell
+   ```
 composer require qiniu/php-sdk
    ```
    
    例子：
 
-   ```php
+   ```
 use Qiniu\Storage\UploadManager;
    use Qiniu\Auth;
    ...
@@ -331,13 +331,13 @@ use Qiniu\Storage\UploadManager;
 
    安装：
 
-   ```shell
+   ```
 composer require dmstr/yii2-adminlte-asset "^2.1"
    ```
    
    例子：
 
-   ```shell
+   ```
 参照github文档进行就可以
    ```
    
@@ -349,13 +349,13 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
    安装：
 
-   ```shell
+   ```
    composer require 2amigos/qrcode-library:~1.1
    ```
 
    例子：
 
-   ```php
+   ```
    <?php 
    
    use Da\QrCode\QrCode;
@@ -394,7 +394,7 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
    安装：
 
-   ```shell
+   ```
    composer require barryvdh/laravel-debugbar --dev
    ```
 
@@ -404,7 +404,7 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
    安装：
 
-   ```shell
+   ```
    composer require --dev barryvdh/laravel-ide-helper
    ```
 
@@ -416,7 +416,7 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
    安装：
 
-   ```shell
+   ```
    composer require spatie/laravel-permission
    ```
 
@@ -428,7 +428,7 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
    安装：
 
-   ```shell
+   ```
    composer require tymon/jwt-auth
    ```
 
@@ -440,7 +440,7 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
    安装：
 
-   ```shell
+   ```
    composer require "spatie/laravel-medialibrary:^7.0.0"
    ```
 

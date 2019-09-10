@@ -165,13 +165,10 @@ brew up #更新成最新的版本
    Github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient)
 
    安装：
-
    ```
 composer require --prefer-dist yiisoft/yii2-httpclient
    ```
-   
    例子：
-
    ```
 use yii\httpclient\Client;
    
@@ -198,13 +195,10 @@ use yii\httpclient\Client;
    Github：[https://github.com/shi-yang/yii2-umeditor](https://github.com/shi-yang/yii2-umeditor)
 
    安装：
-
    ```
 composer require --prefer-dist shiyang/yii2-umeditor "*"
    ```
-   
    例子：
-
    ```
 <?= $form->field($model, 'content')->widget('shiyang\umeditor\UMeditor', [
      'clientOptions' => [
@@ -224,13 +218,10 @@ composer require --prefer-dist shiyang/yii2-umeditor "*"
    Github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget)
 
    安装：
-
    ```
 composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ```
-   
    例子：
-
    ```
 <?= $form->field($model, 'birthday')->widget('dosamigos\datetimepicker\DateTimePicker', [
      'options' => ['placeholder' => '', 'readonly' => 'readonly'],
@@ -251,13 +242,10 @@ composer require 2amigos/yii2-date-time-picker-widget:~1.0
    Github：https://github.com/moonlandsoft/yii2-phpexcel
 
    安装：
-
    ```
 composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
    ```
-   
    例子：
-
    ```
 $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
    $fileName = iconv("utf-8", "gb2312//IGNORE", $fileName);
@@ -307,13 +295,10 @@ $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
    Github：https://github.com/qiniu/php-sdk
 
    安装：
-
    ```
 composer require qiniu/php-sdk
    ```
-   
    例子：
-
    ```
 use Qiniu\Storage\UploadManager;
    use Qiniu\Auth;
@@ -330,13 +315,10 @@ use Qiniu\Storage\UploadManager;
    Github：https://github.com/dmstr/yii2-adminlte-asset
 
    安装：
-
    ```
 composer require dmstr/yii2-adminlte-asset "^2.1"
    ```
-   
    例子：
-
    ```
 参照github文档进行就可以
    ```
@@ -348,13 +330,10 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
    文档：[https://qrcode-library.readthedocs.io/en/latest/](https://qrcode-library.readthedocs.io/en/latest/)
 
    安装：
-
    ```
    composer require 2amigos/qrcode-library:~1.1
    ```
-
    例子：
-
    ```
    <?php 
    

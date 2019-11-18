@@ -31,9 +31,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-```
 brew up #更新成最新的版本
 ```
 
@@ -155,15 +152,15 @@ brew up #更新成最新的版本
 
 #### Yii2 常用扩展整理
 
-1. Httpclient  - 发起远程get,post等请求
-   Github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient)
-   安装：
+1. Httpclient  - 发起远程get,post等请求.  
+   Github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient).  
+   安装：   
    ```
    composer require --prefer-dist yiisoft/yii2-httpclient
    ```
    例子：
    ```
-use yii\httpclient\Client;
+   use yii\httpclient\Client;
    
    $client = new Client(['baseUrl' => 'http://example.com/api/1.0']);
    $response = $client->createRequest()
@@ -180,18 +177,18 @@ use yii\httpclient\Client;
    
    $responseData = $response->getData(); // get all articles
    count($response->data) // count articles
-   $article = $response->data[0] // get fir
+   $article = $response->data[0] // get first
    ```
    
-2. Umeditor  -  百度Umeditor在线Html编辑器
-   Github：[https://github.com/shi-yang/yii2-umeditor](https://github.com/shi-yang/yii2-umeditor)
+2. Umeditor  -  百度Umeditor在线Html编辑器.  
+   Github：[https://github.com/shi-yang/yii2-umeditor](https://github.com/shi-yang/yii2-umeditor).  
    安装：
    ```
-composer require --prefer-dist shiyang/yii2-umeditor "*"
+    composer require --prefer-dist shiyang/yii2-umeditor "*"
    ```
    例子：
    ```
-<?= $form->field($model, 'content')->widget('shiyang\umeditor\UMeditor', [
+    <?= $form->field($model, 'content')->widget('shiyang\umeditor\UMeditor', [
      'clientOptions' => [
        'imageUrl' => \yii\helpers\Url::to(['/upload/umeditor']), //上传图片的链接
        'initialFrameHeight' => 500,
@@ -204,15 +201,15 @@ composer require --prefer-dist shiyang/yii2-umeditor "*"
    ]) ?>
    ```
    
-3. DateTimePicker - bootstrap 时间控件
-   Github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget)
+3. DateTimePicker - bootstrap 时间控件.  
+   Github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget).  
    安装：
    ```
 composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ```
    例子：
    ```
-<?= $form->field($model, 'birthday')->widget('dosamigos\datetimepicker\DateTimePicker', [
+    <?= $form->field($model, 'birthday')->widget('dosamigos\datetimepicker\DateTimePicker', [
      'options' => ['placeholder' => '', 'readonly' => 'readonly'],
      'clientOptions' => [
        'autoclose' => true,
@@ -226,16 +223,16 @@ composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ])->label('Date of birth'); ?>
    ```
    
-4. PHPExcel - Excel的导入与导出
-   Github：https://github.com/moonlandsoft/yii2-phpexcel
+4. PHPExcel - Excel的导入与导出.  
+   Github：https://github.com/moonlandsoft/yii2-phpexcel.  
    安装：
    ```
 composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
    ```
    例子：
    ```
-$fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
-   $fileName = iconv("utf-8", "gb2312//IGNORE", $fileName);
+    $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
+    $fileName = iconv("utf-8", "gb2312//IGNORE", $fileName);
    Excel::widget([
      'models' => $dataProvider->models,
      'mode' => 'export', //default value as 'export'
@@ -277,15 +274,15 @@ $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
    ]);
    ```
    
-5. QiniuPHPSdk - 七牛云php-sdk
-   Github：https://github.com/qiniu/php-sdk
+5. QiniuPHPSdk - 七牛云php-sdk.  
+   Github：https://github.com/qiniu/php-sdk.  
    安装：
    ```
 composer require qiniu/php-sdk
    ```
    例子：
    ```
-use Qiniu\Storage\UploadManager;
+   use Qiniu\Storage\UploadManager;
    use Qiniu\Auth;
    ...
        $upManager = new UploadManager();
@@ -295,20 +292,20 @@ use Qiniu\Storage\UploadManager;
    ...
    ```
    
-6. Adminlte - adminlte后台管理界面
-   Github：https://github.com/dmstr/yii2-adminlte-asset
+6. Adminlte - adminlte后台管理界面.  
+   Github：https://github.com/dmstr/yii2-adminlte-asset.  
    安装：
    ```
-composer require dmstr/yii2-adminlte-asset "^2.1"
+    composer require dmstr/yii2-adminlte-asset "^2.1"
    ```
    例子：
    ```
-参照github文档进行就可以
+    参照github文档进行就可以
    ```
    
-7. Qrcode - 二维码生成
-   Github：[https://github.com/2amigos/qrcode-library](https://github.com/2amigos/qrcode-library)
-   文档：[https://qrcode-library.readthedocs.io/en/latest/](https://qrcode-library.readthedocs.io/en/latest/)
+7. Qrcode - 二维码生成.  
+   Github：[https://github.com/2amigos/qrcode-library](https://github.com/2amigos/qrcode-library).  
+   文档：[https://qrcode-library.readthedocs.io/en/latest/](https://qrcode-library.readthedocs.io/en/latest/).  
 
    安装：
    ```
@@ -348,76 +345,76 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
 #### laravel 常用扩展
 
-1. Laravel-debugbar - 调试工具栏
-   Github： [https://github.com/barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+1. Laravel-debugbar - 调试工具栏.  
+   Github： [https://github.com/barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar).  
    安装：
    ```
    composer require barryvdh/laravel-debugbar --dev
    ```
 
-2. Laravel-ide-helper - 代码提示工具
-   Github： [https://github.com/barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
+2. Laravel-ide-helper - 代码提示工具.  
+   Github： [https://github.com/barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper).  
    安装：
    ```
    composer require --dev barryvdh/laravel-ide-helper
    ```
 
-3. Laravel-permission - 用户权限管理crud
-   Github： [https://github.com/spatie/laravel-permission](https://github.com/spatie/laravel-permission)
-   文档：[https://docs.spatie.be/laravel-permission/v3/introduction/](https://docs.spatie.be/laravel-permission/v3/introduction/)
+3. Laravel-permission - 用户权限管理crud.  
+   Github： [https://github.com/spatie/laravel-permission](https://github.com/spatie/laravel-permission).  
+   文档：[https://docs.spatie.be/laravel-permission/v3/introduction/](https://docs.spatie.be/laravel-permission/v3/introduction/).  
    安装：
    ```
    composer require spatie/laravel-permission
    ```
 
-4. Jwt-auth - jwt用户授权
-   Github：[https://github.com/tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth)
-   文档：[https://jwt-auth.readthedocs.io/en/develop/](https://jwt-auth.readthedocs.io/en/develop/)
+4. Jwt-auth - jwt用户授权.  
+   Github：[https://github.com/tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth).  
+   文档：[https://jwt-auth.readthedocs.io/en/develop/](https://jwt-auth.readthedocs.io/en/develop/).  
    安装：
    ```
    composer require tymon/jwt-auth
    ```
 
-5. Laravel-medialibrary - 媒体管理库
-   Github：[https://github.com/spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary)
-   文档：[https://docs.spatie.be/laravel-medialibrary/v7/introduction/](https://docs.spatie.be/laravel-medialibrary/v7/introduction/)
+5. Laravel-medialibrary - 媒体管理库.  
+   Github：[https://github.com/spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary).  
+   文档：[https://docs.spatie.be/laravel-medialibrary/v7/introduction/](https://docs.spatie.be/laravel-medialibrary/v7/introduction/).  
    安装：
    ```
    composer require "spatie/laravel-medialibrary:^7.0.0"
    ```
 
-6. Laravel-cors - 跨域库
-   Github：[https://github.com/spatie/laravel-cors](https://github.com/spatie/laravel-cors)
+6. Laravel-cors - 跨域库.  
+   Github：[https://github.com/spatie/laravel-cors](https://github.com/spatie/laravel-cors).  
 
-7. Laravel-wechat - 微信公众号等
-   Github：[https://github.com/overtrue/laravel-wechat](https://github.com/overtrue/laravel-wechat)
+7. Laravel-wechat - 微信公众号等.  
+   Github：[https://github.com/overtrue/laravel-wechat](https://github.com/overtrue/laravel-wechat).  
 
-8. Laravel-pinyin - 中文转换成拼音
-   Github：[https://github.com/overtrue/laravel-pinyin](https://github.com/overtrue/laravel-pinyin)
+8. Laravel-pinyin - 中文转换成拼音.  
+   Github：[https://github.com/overtrue/laravel-pinyin](https://github.com/overtrue/laravel-pinyin).  
 
-9. Laravel-lang - 多语言包
-   Github：[https://github.com/overtrue/laravel-lang](https://github.com/overtrue/laravel-lang)
+9. Laravel-lang - 多语言包.  
+   Github：[https://github.com/overtrue/laravel-lang](https://github.com/overtrue/laravel-lang).  
 
-10. Laravel-snappy - 网页保存成pdf或图片
-    Github：[https://github.com/barryvdh/laravel-snappy](https://github.com/barryvdh/laravel-snappy)
+10. Laravel-snappy - 网页保存成pdf或图片.  
+    Github：[https://github.com/barryvdh/laravel-snappy](https://github.com/barryvdh/laravel-snappy).  
 
-11. Laravel-push-notification - 消息推动，包括ios
-    Github：[https://github.com/davibennun/laravel-push-notification](https://github.com/davibennun/laravel-push-notification)
+11. Laravel-push-notification - 消息推动，包括ios.  
+    Github：[https://github.com/davibennun/laravel-push-notification](https://github.com/davibennun/laravel-push-notification).  
 
-12. Image - 图片操作库
-    Github：[https://github.com/Intervention/image](https://github.com/Intervention/image)
+12. Image - 图片操作库.  
+    Github：[https://github.com/Intervention/image](https://github.com/Intervention/image).  
 
-13. Laravel-excel - Excel文件操作库
-    Github：[https://github.com/Maatwebsite/Laravel-Excel](https://github.com/Maatwebsite/Laravel-Excel)
+13. Laravel-excel - Excel文件操作库.  
+    Github：[https://github.com/Maatwebsite/Laravel-Excel](https://github.com/Maatwebsite/Laravel-Excel).  
 
-14. Laravel-flash  - 轻量级消息提示
-    Github：[https://github.com/spatie/laravel-flash](https://github.com/spatie/laravel-flash)
+14. Laravel-flash  - 轻量级消息提示.  
+    Github：[https://github.com/spatie/laravel-flash](https://github.com/spatie/laravel-flash).  
     
-15. Laravel-LaravelCollective - 表单组件
-    Github：[https://github.com/LaravelCollective/html](https://github.com/LaravelCollective/html)
+15. Laravel-LaravelCollective - 表单组件.  
+    Github：[https://github.com/LaravelCollective/html](https://github.com/LaravelCollective/html).  
     
-16. Laravel-mediable - 另一个图片及多媒体管理库
-    Github：[https://github.com/plank/laravel-mediable](https://github.com/plank/laravel-mediable)
+16. Laravel-mediable - 另一个图片及多媒体管理库.  
+    Github：[https://github.com/plank/laravel-mediable](https://github.com/plank/laravel-mediable).  
 
 
 
@@ -427,8 +424,8 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 
 ### 前端免费的CDN加速
 
-1. BootCDN [https://www.bootcdn.cn/](https://www.bootcdn.cn/)
-2. Staticfile CDN [https://www.staticfile.org/](https://www.staticfile.org/)
+1. BootCDN [https://www.bootcdn.cn/](https://www.bootcdn.cn/).  
+2. Staticfile CDN [https://www.staticfile.org/](https://www.staticfile.org/).  
 
 ### 前端插件库
 

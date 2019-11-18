@@ -205,7 +205,7 @@ brew up #更新成最新的版本
    Github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget).  
    安装：
    ```
-composer require 2amigos/yii2-date-time-picker-widget:~1.0
+    composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ```
    例子：
    ```

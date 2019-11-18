@@ -227,7 +227,7 @@ brew up #更新成最新的版本
    Github：https://github.com/moonlandsoft/yii2-phpexcel.  
    安装：
    ```
-composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
+    composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
    ```
    例子：
    ```
@@ -278,7 +278,7 @@ composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
    Github：https://github.com/qiniu/php-sdk.  
    安装：
    ```
-composer require qiniu/php-sdk
+    composer require qiniu/php-sdk
    ```
    例子：
    ```

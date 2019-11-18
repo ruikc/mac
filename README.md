@@ -29,11 +29,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 #### [Homebrew](https://brew.sh/)
 
-```shell
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-```shell
+```
 brew up #更新成最新的版本
 ```
 
@@ -45,7 +45,7 @@ brew up #更新成最新的版本
 
 1. 安装php7.1版本
 
-   ```shell
+   ```
    brew install php@7.1 #安装php7.1版本
    ```
 
@@ -57,7 +57,7 @@ brew up #更新成最新的版本
 
 3. 安装xdebug调试扩展
 
-   ```shell
+   ```
    mv /usr/local/etc/php/7.1/pecl /usr/local/etc/php/7.1/pecl_old #不知道为什么，原pecl不是目录
    mkdir /usr/local/etc/php/7.1/pecl #先创建目录
    pecl install xdebug #安装扩展
@@ -80,7 +80,7 @@ brew up #更新成最新的版本
 
 4. 其他扩展可以使用直接使用pecl进行安装
 
-   ```shell
+   ```
    比如pecl install mongodb 等
    ```
 
@@ -90,19 +90,19 @@ brew up #更新成最新的版本
 
 1. 安装apache服务
 
-   ```shell
+   ```
    brew install httpd
    ```
 
 2. 默认配置文件所在路径
 
-   ```shell
+   ```
    /usr/local/etc/httpd
    ```
 
 3. 添加域名配置目录
 
-   ```sh
+   ```
    mkdir /usr/local/etc/httpd/vhost
    ```
 
@@ -131,26 +131,21 @@ brew up #更新成最新的版本
 #### Composer 国内源
 
 1. 阿里云Composer(推荐)
-
    镜像地址：https://mirrors.aliyun.com/composer/
-
    官方地址：[https://developer.aliyun.com/composer](https://developer.aliyun.com/composer)
 
 2. phpcomposer
 
    镜像地址：[https://packagist.phpcomposer.com](https://packagist.phpcomposer.com)
-
    官方地址： [https://pkg.phpcomposer.com/](https://pkg.phpcomposer.com/)
 
 3. 安畅网络镜像
-
    镜像地址：[https://php.cnpkg.org](https://php.cnpkg.org)
-
    官方地址：[https://php.cnpkg.org](https://php.cnpkg.org)
 
 4. 配置命令如下:
 
-   ```shell
+   ```
    #全局配置
    composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
    或
@@ -161,12 +156,10 @@ brew up #更新成最新的版本
 #### Yii2 常用扩展整理
 
 1. Httpclient  - 发起远程get,post等请求
-
    Github：[https://github.com/yiisoft/yii2-httpclient](https://github.com/yiisoft/yii2-httpclient)
-
    安装：
    ```
-composer require --prefer-dist yiisoft/yii2-httpclient
+   composer require --prefer-dist yiisoft/yii2-httpclient
    ```
    例子：
    ```
@@ -191,9 +184,7 @@ use yii\httpclient\Client;
    ```
    
 2. Umeditor  -  百度Umeditor在线Html编辑器
-
    Github：[https://github.com/shi-yang/yii2-umeditor](https://github.com/shi-yang/yii2-umeditor)
-
    安装：
    ```
 composer require --prefer-dist shiyang/yii2-umeditor "*"
@@ -214,9 +205,7 @@ composer require --prefer-dist shiyang/yii2-umeditor "*"
    ```
    
 3. DateTimePicker - bootstrap 时间控件
-
    Github：[https://github.com/2amigos/yii2-date-time-picker-widget](https://github.com/2amigos/yii2-date-time-picker-widget)
-
    安装：
    ```
 composer require 2amigos/yii2-date-time-picker-widget:~1.0
@@ -238,9 +227,7 @@ composer require 2amigos/yii2-date-time-picker-widget:~1.0
    ```
    
 4. PHPExcel - Excel的导入与导出
-
    Github：https://github.com/moonlandsoft/yii2-phpexcel
-
    安装：
    ```
 composer require --prefer-dist moonlandsoft/yii2-phpexcel "*"
@@ -291,9 +278,7 @@ $fileName = '出纳日记账_' . date('YmdHis') . '.xlsx';
    ```
    
 5. QiniuPHPSdk - 七牛云php-sdk
-
    Github：https://github.com/qiniu/php-sdk
-
    安装：
    ```
 composer require qiniu/php-sdk
@@ -311,9 +296,7 @@ use Qiniu\Storage\UploadManager;
    ```
    
 6. Adminlte - adminlte后台管理界面
-
    Github：https://github.com/dmstr/yii2-adminlte-asset
-
    安装：
    ```
 composer require dmstr/yii2-adminlte-asset "^2.1"
@@ -324,9 +307,7 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
    ```
    
 7. Qrcode - 二维码生成
-
    Github：[https://github.com/2amigos/qrcode-library](https://github.com/2amigos/qrcode-library)
-
    文档：[https://qrcode-library.readthedocs.io/en/latest/](https://qrcode-library.readthedocs.io/en/latest/)
 
    安装：
@@ -368,103 +349,74 @@ composer require dmstr/yii2-adminlte-asset "^2.1"
 #### laravel 常用扩展
 
 1. Laravel-debugbar - 调试工具栏
-
    Github： [https://github.com/barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
-
    安装：
-
    ```
    composer require barryvdh/laravel-debugbar --dev
    ```
 
 2. Laravel-ide-helper - 代码提示工具
-
    Github： [https://github.com/barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
-
    安装：
-
    ```
    composer require --dev barryvdh/laravel-ide-helper
    ```
 
 3. Laravel-permission - 用户权限管理crud
-
    Github： [https://github.com/spatie/laravel-permission](https://github.com/spatie/laravel-permission)
-
    文档：[https://docs.spatie.be/laravel-permission/v3/introduction/](https://docs.spatie.be/laravel-permission/v3/introduction/)
-
    安装：
-
    ```
    composer require spatie/laravel-permission
    ```
 
 4. Jwt-auth - jwt用户授权
-
    Github：[https://github.com/tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth)
-
    文档：[https://jwt-auth.readthedocs.io/en/develop/](https://jwt-auth.readthedocs.io/en/develop/)
-
    安装：
-
    ```
    composer require tymon/jwt-auth
    ```
 
 5. Laravel-medialibrary - 媒体管理库
-
    Github：[https://github.com/spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary)
-
    文档：[https://docs.spatie.be/laravel-medialibrary/v7/introduction/](https://docs.spatie.be/laravel-medialibrary/v7/introduction/)
-
    安装：
-
    ```
    composer require "spatie/laravel-medialibrary:^7.0.0"
    ```
 
 6. Laravel-cors - 跨域库
-
    Github：[https://github.com/spatie/laravel-cors](https://github.com/spatie/laravel-cors)
 
 7. Laravel-wechat - 微信公众号等
-
    Github：[https://github.com/overtrue/laravel-wechat](https://github.com/overtrue/laravel-wechat)
 
 8. Laravel-pinyin - 中文转换成拼音
-
    Github：[https://github.com/overtrue/laravel-pinyin](https://github.com/overtrue/laravel-pinyin)
 
 9. Laravel-lang - 多语言包
-
    Github：[https://github.com/overtrue/laravel-lang](https://github.com/overtrue/laravel-lang)
 
 10. Laravel-snappy - 网页保存成pdf或图片
-
     Github：[https://github.com/barryvdh/laravel-snappy](https://github.com/barryvdh/laravel-snappy)
 
 11. Laravel-push-notification - 消息推动，包括ios
-
     Github：[https://github.com/davibennun/laravel-push-notification](https://github.com/davibennun/laravel-push-notification)
 
 12. Image - 图片操作库
-
     Github：[https://github.com/Intervention/image](https://github.com/Intervention/image)
 
 13. Laravel-excel - Excel文件操作库
-
     Github：[https://github.com/Maatwebsite/Laravel-Excel](https://github.com/Maatwebsite/Laravel-Excel)
 
 14. Laravel-flash  - 轻量级消息提示
-
     Github：[https://github.com/spatie/laravel-flash](https://github.com/spatie/laravel-flash)
     
 15. Laravel-LaravelCollective - 表单组件
-
     Github：[https://github.com/LaravelCollective/html](https://github.com/LaravelCollective/html)
     
 16. Laravel-mediable - 另一个图片及多媒体管理库
-
     Github：[https://github.com/plank/laravel-mediable](https://github.com/plank/laravel-mediable)
 
 
